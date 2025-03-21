@@ -277,7 +277,7 @@ p {
 }
 
 .login-button {
-    background-color: #D1001F;
+    background-color: #691d34;
     color: white;
     border: none;
     padding: 6px 30px;
@@ -354,7 +354,7 @@ p {
     background-color: #c0945c;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 8px; /* Agregar borde redondeado a la barra de navegación */
+    /*border-radius: 8px;  Agregar borde redondeado a la barra de navegación */
 }
 
 .navbar-lower .navbar-nav {
@@ -373,7 +373,7 @@ p {
 
 .navbar-lower .nav-item a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 14px;
     font-weight: normal;
 }
@@ -407,7 +407,7 @@ p {
 }
 
 .dropdown-menu a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -417,7 +417,7 @@ p {
 }
 
 .dropdown-menu a:hover {
-    background-color: #c0945c;
+    /* background-color: #c0945c; */
     color: white;
 }
 
@@ -447,7 +447,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c0945c;
+    /* background-color: #c0945c; */
     padding: 10px 0; /* Ajuste de padding para mejorar la visualización */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -464,7 +464,7 @@ p {
 .navbar-lower .menu-title {
     font-size: 18px;
     color: white;
-    background-color: #D1001F; /* Fondo rojo para los títulos */
+    background-color: #c0945c; /* Fondo rojo para los títulos */
     padding: 10px;
     margin: 0; /* Elimina margen para que el fondo rojo abarque todo el ancho */
     font-weight: normal;
