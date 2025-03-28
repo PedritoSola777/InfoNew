@@ -309,7 +309,7 @@ p {
 .mobile-dropdown {
     background-color: #FFF;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #f9f9fb;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -417,13 +417,13 @@ p {
 }
 
 .dropdown-menu a:hover {
-    /* background-color: #c0945c; */
+    background-color: #f9f9fb;
     color: white;
 }
 
 /* Estilo para la línea roja */
 .dropdown-menu {
-    border-left: 3px solid red;
+    border-left: 3px solid #691d34;
     padding-left: 10px;
 }
 
@@ -497,7 +497,7 @@ p {
 }
 
 .navbar-lower .menu-items a:hover {
-    background-color: #F5F5F5; /* Fondo gris claro al pasar el ratón */
+    background-color: #f9f9fb; /* Fondo gris claro al pasar el ratón */
 }
 
 /* Botón del Menú */
