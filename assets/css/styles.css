@@ -357,6 +357,25 @@ p {
     /*border-radius: 8px;  Agregar borde redondeado a la barra de navegación */
 }
 
+.navbar-lower.desktop-only2 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /*border-radius: 8px;  Agregar borde redondeado a la barra de navegación */
+}
+
+
+  
+  @media (max-width: 768px) {
+    .navbar-lower.desktop-only2 {
+      display: none;
+    }
+  }
+
+
 .navbar-lower .navbar-nav {
     list-style-type: none;
     margin: 0;
