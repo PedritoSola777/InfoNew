@@ -357,23 +357,134 @@ p {
     /*border-radius: 8px;  Agregar borde redondeado a la barra de navegación */
 }
 
+/************************************************************/
+/*             NAV2 – Nueva Navbar Inferior (desktop-only2)   */
+/************************************************************/
+
+/* Contenedor principal de la nav2 */
 .navbar-lower.desktop-only2 {
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center;
     background-color: #f8f9fa;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    /*border-radius: 8px;  Agregar borde redondeado a la barra de navegación */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    /* Si es necesario ajustar la separación con otros elementos, se puede usar margin-bottom o margin-top */
 }
 
+/* Lista de elementos de la nav2 */
+.navbar-lower.desktop-only2 .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-  
-  @media (max-width: 768px) {
-    .navbar-lower.desktop-only2 {
-      display: none;
-    }
-  }
+/* Estilos para cada ítem de la nav2 */
+.navbar-lower.desktop-only2 .nav-item {
+    position: relative; /* Permite posicionar el dropdown de forma absoluta */
+    padding: 10px 20px;
+}
+
+/* Estilo base para los enlaces de la nav2 */
+.navbar-lower.desktop-only2 .nav-item a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+/************************************************************/
+/*      Dropdown exclusivo para "Aliados Estratégicos"      */
+/************************************************************/
+
+/* Contenedor del dropdown dentro del ítem “Aliados Estratégicos” */
+.navbar-lower.desktop-only2 .new-dropdown {
+    position: relative;
+}
+
+/* Contenedor que actúa como botón (toggle) que agrupa texto + ícono */
+.navbar-lower.desktop-only2 .new-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Estilo para el ícono de la flecha */
+.navbar-lower.desktop-only2 .new-dropdown-toggle img {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Menú desplegable con 3 columnas (por defecto oculto) */
+.navbar-lower.desktop-only2 .new-dropdown-menu {
+    display: none; /* Se oculta por defecto */
+    position: absolute;
+    top: calc(100% + 5px); /* Ubicado justo debajo del toggle */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 1000;
+    /* Ajustes para reducir el tamaño del menú */
+    padding: 10px;       /* Menos padding que antes */
+    min-width: 450px;    /* Ancho mínimo reducido */
+    overflow: hidden;
+}
+
+/* Cuando el menú esté abierto (agregando la clase "open") */
+.navbar-lower.desktop-only2 .new-dropdown-menu.open {
+    display: flex;
+    gap: 20px; /* Menor espacio entre columnas */
+}
+
+/* Cada columna dentro del dropdown */
+.navbar-lower.desktop-only2 .new-dropdown-menu .dropdown-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px; /* Ancho mínimo de cada columna */
+}
+
+/* Títulos de cada columna */
+.navbar-lower.desktop-only2 .new-dropdown-menu .dropdown-column h4 {
+    font-size: 16px;
+    color: #000;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+}
+
+/* Lista de enlaces en cada columna */
+.navbar-lower.desktop-only2 .new-dropdown-menu .dropdown-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Espaciado entre elementos de la lista */
+.navbar-lower.desktop-only2 .new-dropdown-menu .dropdown-column li {
+    margin-bottom: 8px;
+}
+
+/* Estilo de los enlaces dentro del dropdown */
+.navbar-lower.desktop-only2 .new-dropdown-menu .dropdown-column a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+/* Efecto hover para los enlaces del dropdown */
+.navbar-lower.desktop-only2 .new-dropdown-menu .dropdown-column a:hover {
+    text-decoration: underline;
+}
+
 
 
 .navbar-lower .navbar-nav {
